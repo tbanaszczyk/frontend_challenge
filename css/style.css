@@ -9,6 +9,10 @@ body {
   margin: 0 auto;
 }
 
+.container {
+  border-bottom: solid #D8D8D8 0.5px;
+}
+
 nav {
   position: fixed;
 	width: 575px;
@@ -17,39 +21,48 @@ nav {
 	border-bottom: solid #D8D8D8 1px;
 }
 
-.arrow-left {
-	color: #9b9b9b;
-	float: left;
-	padding: 32px 0 0 8px;
+.page-name {
+  padding: 0 0 0 40%;
 }
 
 h1 {
 	color: #000;
 	font-size: 17px;
 	padding-top: 32px;
-	text-align: center;
+}
+
+.arrow-left {
+	color: #9b9b9b;
+	float: left;
+	padding: 32px 0 0 8px;
 }
 
 .sub-header {
   position: fixed;
-  margin: 65px 0 5px 0;
+  margin: 64px 0 0 0;
   width: 575px;
   height: 30px;
-  background-color: #4A4A4A;
+  background-color: #6D6D72;
+  border-top: solid #D8D8D8 1px;
+  border-bottom: solid #D8D8D8 1px;
 }
 
 h2 {
 	font-size: 14px;
   font-weight: normal;
-  color: #fff;
-  padding-left: 16px;
+  color: #fafafa;
+  line-height: 28px;
+  display: inline-block;
+}
+
+.route-listing {
+  padding-top: 94px;
 }
 
 .direction-header {
-  display: inline-block;
-  margin-top: 95px;
   width: 100%;
   height: 30px;
+  margin-top: -1px;
   background-color: #fafafa;
   border-bottom: solid #D8D8D8 1px;
   border-top: solid #D8D8D8 1px;
@@ -61,35 +74,48 @@ h5 {
   text-transform: uppercase;
   color: #6D6D72;
   padding-left: 16px;
-  padding-top: 8px;
+  line-height: 28px;
 }
 
-.bus-route-list {
-  width: 100%;
-  height: auto;
-  border-bottom: solid #D8D8D8 1px;
+.info-row {
+  height: 45px;
+  border-bottom: dotted #D8D8D8 0.5px;
 }
 
-.bus {
+.line {
   display: inline-block;
+  padding-left: 16px;
+  width: 7%;
+  margin-right: 5em;
+}
+
+.destination {
+  display: inline-block;
+  width: 30%;
+  margin-right: 3em;
+}
+
+.frequency {
+  display: inline-block;
+  width: 30%;
 }
 
 .arrow-right {
 	color: #000;
-	float: right;
-	padding: 0 0 0 0;
+  float:right;
+  padding: 5px 16px 0 0;
+  vertical-align:inherit;
 }
 
 h3 {
 	color: #000;
 	font-size: 12px;
-  line-height: 26px;
-  padding-left: 16px;
+  line-height: 36px;
 }
 
 h4 {
 	color: #000;
 	font-size: 12px;
-  line-height: 26px;
-  padding-left: 16px;
+  line-height: 36px;
+  text-align: center;
 }
